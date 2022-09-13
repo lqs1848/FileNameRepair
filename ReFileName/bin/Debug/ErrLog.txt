@@ -1,0 +1,32 @@
+出现应用程序未处理的异常：2022/9/9 12:29:41
+Application UnhandledException:未能找到路径“I:\now\345SIMM-395”的一部分。;
+堆栈信息:   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   在 System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   在 System.IO.DirectoryInfo.InternalGetFileSystemInfos(String searchPattern, SearchOption searchOption)
+   在 System.IO.DirectoryInfo.GetFileSystemInfos()
+   在 AvCoverDownloader.Collector.Director(String dir) 位置 D:\Work\C#\ReFileName\ReFileName\Collector.cs:行号 48
+   在 AvCoverDownloader.Collector.Director(String dir) 位置 D:\Work\C#\ReFileName\ReFileName\Collector.cs:行号 58
+   在 AvCoverDownloader.Collector.Director(String dir) 位置 D:\Work\C#\ReFileName\ReFileName\Collector.cs:行号 58
+   在 AvCoverDownloader.Collector.Collect() 位置 D:\Work\C#\ReFileName\ReFileName\Collector.cs:行号 39
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+---------------------------------------------------------
+出现应用程序未处理的异常：2022/9/9 13:00:38
+Application UnhandledException:未能找到路径“I:\now\345SIMM-395”的一部分。;
+堆栈信息:   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   在 System.IO.Directory.Move(String sourceDirName, String destDirName)
+   在 AvCoverDownloader.Collector.rename(FileSystemInfo fsinfo) 位置 D:\Work\C#\ReFileName\ReFileName\Collector.cs:行号 112
+   在 AvCoverDownloader.Collector.Director(String dir) 位置 D:\Work\C#\ReFileName\ReFileName\Collector.cs:行号 72
+   在 AvCoverDownloader.Collector.Director(String dir) 位置 D:\Work\C#\ReFileName\ReFileName\Collector.cs:行号 70
+   在 AvCoverDownloader.Collector.Collect() 位置 D:\Work\C#\ReFileName\ReFileName\Collector.cs:行号 39
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+---------------------------------------------------------
